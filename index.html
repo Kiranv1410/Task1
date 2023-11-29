@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL AGENCY</title>
+</head>
+<body>
+    <div >
+        <div class="list">
+            <ul>
+                <li><h1>HOME</h1></li>
+                <li><h1>ABOUT US</h1></li>
+                <li><h1>PLANS</h1></li>
+                <li><h1>OFFERS!</h1></li>
+            </ul>
+        </div>
+        <div class="list2">
+            <h1>PLAN YOUR HOLIDAY PACKAGES</h1>
+            <ul>
+                <li><button>BOOK NOW</button></li>
+                <li><button>YOUR TRIP</button></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+
+<style>
+     *{
+    margin: 0%;
+    padding: 0;
+    
+} 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+ 
+*{
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+
+body{
+    /* height: 100vh; */
+    background: url(./Images/Images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    
+     /* z-index: -1; */
+}
+
+.list{
+    margin-top: 25px;
+}
+
+.list2{
+  margin-top: 15%;
+  margin-left: 22%;
+  border: 2px solid black;
+  height: 180px;
+  width: 530px;
+  background: rgba(0, 0, 0, 0.137);
+}
+
+.list2 h1{
+    text-align: center;
+}
+
+.list2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:40px ;
+}
+ .list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ .list ul li{
+    transition: 0.5s;
+    cursor: pointer;
+ }
+
+ .list ul:hover li{
+    filter:blur(5px);
+ }
+
+ .list ul li:hover{
+    filter:blur(0px);
+ }
+
+.list2 ul button{
+    width: 150px;
+    height: 35px;
+    background: blue;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.list2 ul button:hover{
+    transform: scale(0.8);
+}
+
+
+</style>
